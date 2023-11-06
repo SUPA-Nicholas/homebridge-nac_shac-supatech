@@ -7,7 +7,7 @@ import { nac_shacPlatform } from './platform';
  * An instance of this class is created for each accessory your platform registers
  * Each accessory may expose multiple services of different service types.
  */
-export class  nac_shacAccessory {
+export class nac_shacAccessory {
   private service: Service;
 
   /**
