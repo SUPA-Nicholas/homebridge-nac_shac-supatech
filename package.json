@@ -1,16 +1,16 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
+  "displayName": "Homebridge-NAC/SHAC-SUPATech",
+  "name": "homebridge-nac_shac-supatech",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "C-Bus NAC/SHAC plugin for homebridge: https://github.com/homebridge/homebridge",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "https://github.com/SUPA-Nicholas/homebridge-nac_shac-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/SUPA-Nicholas/homebridge-nac_shac-plugin/issues"
   },
   "engines": {
     "node": "^18.17.0",

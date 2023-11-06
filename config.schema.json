@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "Homebridge-NAC/SHAC-SUPATech",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,54 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "NAC/SHAC"
+      },
+      "IPAddress": {
+        "title": "NAC/SHAC IP Address",
+        "type": "string",
+        "format": "ipv4",
+        "required": true
+      },
+      "portNumber": {
+        "title": "Port Number",
+        "type": "integer",
+        "required": true,
+        "default": 443
+      },
+      "Username": {
+				"title": "NAC/SHAC admin user name",
+				"type": "string",
+				"default": "admin",
+				"required": true
+			},
+			"Password": {
+				"title": "NAC/SHAC admin password",
+				"type": "string",
+				"required": true
+			},
+      "ignoredGAs": {
+        "title": "Ignored groups",
+				"type": "array",
+				"items": {
+					"title": "Group address",
+					"type": "object",
+					"properties": {
+						"network": {
+							"title": "Network",
+							"type": "integer",
+							"required": true,
+							"default": 254,
+							"maximum":255
+						},
+						"ga": {
+							"title": "Group address",
+							"type": "integer",
+							"required": true,
+							"maximum":255,
+							"default": 0
+						}
+					}
+				}
       }
     }
   }
